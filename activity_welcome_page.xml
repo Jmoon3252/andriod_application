@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/background"
+    android:paddingTop="50dp"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="376dp"
+        android:layout_height="246dp"
+        android:layout_marginEnd="16dp"
+        android:topLeftRadius="45dp"
+        android:topRightRadius="45dp"
+        app:cardCornerRadius="@android:dimen/app_icon_size"
+        app:cardElevation="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.944"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:orientation="horizontal"
+            android:paddingLeft="225dp"
+            android:paddingTop="175dp">
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="121dp"
+                android:layout_height="58dp"
+                android:text="Next"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="377dp"
+            android:layout_height="157dp"
+            android:layout_margin="1dp"
+            android:fontFamily="@font/acme"
+            android:paddingTop="70dp"
+            android:text="It means this delicious food you can enjoy everyday!!"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#4B2A85"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="320dp"
+            android:layout_height="68dp"
+            android:fontFamily="@font/aclonica"
+            android:paddingLeft="100dp"
+            android:paddingTop="15dp"
+            android:text="Hey Delocious!"
+            android:textColor="#4B2A85"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="291dp"
+            android:layout_height="wrap_content"
+            android:foregroundTint="#9C27B0"
+            android:paddingLeft="80dp"
+            android:paddingTop="150dp"
+            android:progress="30"
+            android:progressTint="#4B2A85" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

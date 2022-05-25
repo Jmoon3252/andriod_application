@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pic2"
+    android:scaleType="fitXY"
+    tools:context="LogIn">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="432dp"
+        android:layout_height="148dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-3dp">
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="345dp"
+        android:layout_height="270dp"
+        android:bottomLeftRadius="45dp"
+        android:bottomRightRadius="45dp"
+        android:topLeftRadius="45dp"
+        android:topRightRadius="45dp"
+        app:cardCornerRadius="@android:dimen/app_icon_size"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.778"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/user_attempts"
+            android:layout_width="match_parent"
+            android:layout_height="214dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:fontFamily="@font/alata"
+            android:paddingTop="185dp"
+            android:text="Your login attempts 3 only"
+            android:textAlignment="center"
+            android:textColor="#F44336"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="359dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alata"
+            android:paddingLeft="120dp"
+            android:text="Sign In"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="359dp" />
+
+        <EditText
+            android:id="@+id/userEmail"
+            android:layout_width="290dp"
+            android:layout_height="132dp"
+            android:ems="10"
+            android:hint="Enter Email"
+            android:inputType="textPersonName"
+            android:lineSpacingExtra="8sp"
+            android:lines="?attr/motionDurationShort1"
+            android:paddingLeft="50dp"
+            android:paddingTop="80dp"
+            android:singleLine="false"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="359dp" />
+
+        <ImageView
+            android:layout_width="88dp"
+            android:layout_height="122dp"
+            android:paddingLeft="50dp"
+            android:paddingTop="85dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/username"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="359dp" />
+
+        <EditText
+            android:id="@+id/userPass"
+            android:layout_width="293dp"
+            android:layout_height="190dp"
+            android:ems="10"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:lineSpacingExtra="8sp"
+            android:paddingLeft="50dp"
+            android:paddingTop="145dp"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+            android:textColor="#FFEB3B"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="359dp" />
+
+        <ImageView
+            android:layout_width="101dp"
+            android:layout_height="178dp"
+            android:paddingLeft="50dp"
+            android:paddingTop="130dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/password"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="359dp" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alata"
+            android:paddingLeft="20dp"
+            android:paddingTop="55dp"
+            android:text="Please Login with your Email and password"
+            android:textColor="#000000"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="359dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            android:orientation="horizontal"
+            android:paddingLeft="130dp"
+            android:paddingTop="215dp">
+
+            <Button
+                android:id="@+id/btn_signin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign In"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

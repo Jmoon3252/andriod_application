@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.homepage">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Homepage">
+        <activity
+            android:name=".welcome_page"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-6703460137758077~7016319935" />
+
+        <activity
+            android:name=".booking_success"
+            android:exported="false" />
+        <activity
+            android:name=".booking_tableB"
+            android:exported="false" />
+        <activity
+            android:name=".barista"
+            android:exported="false" />
+        <activity
+            android:name=".mc"
+            android:exported="false" />
+        <activity
+            android:name=".ui.login.mc"
+            android:exported="false"
+            android:label="@string/title_activity_mc" />
+        <activity
+            android:name=".ui.login.barista"
+            android:exported="false"
+            android:label="@string/title_activity_barista" />
+        <activity
+            android:name=".ui.login.MC"
+            android:exported="false"
+            android:label="@string/title_activity_mc" />
+        <activity
+            android:name=".ResturantList"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".booking_tableA"
+            android:exported="false" />
+        <activity
+            android:name=".SignUp_page"
+            android:exported="false" />
+        <activity
+            android:name=".LogIn"
+            android:exported="false" />
+        <activity
+            android:name=".ui.login.LogInActivity"
+            android:exported="false"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

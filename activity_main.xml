@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/mccafe"
+    tools:context=".welcome_page">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView10"
+        android:layout_width="307dp"
+        android:layout_height="409dp"
+        android:bottomLeftRadius="15dp"
+        android:bottomRightRadius="15dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.785">
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="match_parent"
+            android:layout_height="348dp"
+            android:fontFamily="@font/acme"
+            android:paddingLeft="30dp"
+            android:paddingTop="200dp"
+            android:text="Welcome in OMNIfoods "
+            android:textColor="#673AB7"
+            android:textSize="28sp" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="match_parent"
+            android:layout_height="234dp"
+            android:src="@drawable/logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="90dp"
+            android:paddingTop="300dp">
+
+            <Button
+                android:id="@+id/btn_logo"
+                style="@android:style/Widget.Material.Light.Button"
+                android:layout_width="159dp"
+                android:layout_height="50dp"
+                android:background="@color/purple_500"
+                android:elevation="50dp"
+                android:rotation="0"
+                android:rotationY="5"
+                android:text="Next"
+                android:textAlignment="center"
+                android:textColor="#673AB7"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="416dp"
+        android:layout_height="270dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
